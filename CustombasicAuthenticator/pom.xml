@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.custom.basic.authenticator</groupId>
-    <artifactId>custom-basic-authenticator</artifactId>
+    <groupId>custom-basic-authenticator</groupId>
+    <artifactId>org.wso2.sample.custom.basic.authenticator</artifactId>
     <packaging>bundle</packaging>
     <version>1.0-SNAPSHOT</version>
 
@@ -61,6 +61,7 @@
             <version>2.1</version>
         </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -95,7 +96,7 @@
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
                         <Private-Package>
-                            com.custom.basic.authenticator.internal
+                            org.wso2.sample.basic.authenticator.internal
                         </Private-Package>
                         <Import-Package>
                             javax.servlet.http; version="[2.6.0, 3.0.0)",
@@ -120,8 +121,8 @@
                             org.wso2.carbon.utils.multitenancy; version="[4.4.0, 5.0.0)"
                         </Import-Package>
                         <Export-Package>
-                            !com.custom.basic.authenticator.internal,
-                            com.custom.basic.authenticator.*
+                            !org.wso2.sample.basic.authenticator.internal,
+                            org.wso2.sample.basic.authenticator.*
                         </Export-Package>
                     </instructions>
                 </configuration>
@@ -148,4 +149,6 @@
             <url>http://dist.wso2.org/maven2</url>
         </pluginRepository>
     </pluginRepositories>
+
+
 </project>

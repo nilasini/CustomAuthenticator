@@ -1,6 +1,5 @@
-package org.wso2.sample.custom.basic.authenticator;
+package org.wso2.sample.basic.authenticator;
 
-import org.wso2.sample.custom.basic.authenticator.internal.CustomBasicAuthenticatorServiceComponent;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -21,6 +20,7 @@ import org.wso2.carbon.user.core.UserStoreException;
 import org.wso2.carbon.user.core.UserStoreManager;
 import org.wso2.carbon.user.core.util.UserCoreUtil;
 import org.wso2.carbon.utils.multitenancy.MultitenantUtils;
+import org.wso2.sample.basic.authenticator.internal.CustomBasicAuthenticatorServiceComponent;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -32,9 +32,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import static javax.xml.ws.BindingProvider.PASSWORD_PROPERTY;
 
-/**
- * Custom basic authenticator to
- */
 public class CustomBasicAuthenticator extends AbstractApplicationAuthenticator
         implements LocalApplicationAuthenticator {
 
@@ -238,3 +235,4 @@ public class CustomBasicAuthenticator extends AbstractApplicationAuthenticator
         return BasicCustomAuthenticatorConstants.AUTHENTICATOR_NAME;
     }
 }
+
