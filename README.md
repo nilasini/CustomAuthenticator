@@ -9,6 +9,7 @@ Follow the below steps to tryout the scenario
 `<AuthenticatorConfig name="CustomBasicAuthenticator" enabled="true"> <Parameter name="UserStoresPrecedence">Secondary,Third</Parameter> </AuthenticatorConfig>`
 
  Add an alias under AuthenticatorNameMappings as below.
+ 
 `<AuthenticatorNameMapping name="CustomBasicAuthenticator" alias="custombasic" />`
 
 4. Restart the server
