@@ -6,6 +6,7 @@ Follow the below steps to tryout the scenario
 2. Copy org.wso2.sample.custom.basic.authenticator-1.0-SNAPSHOT.jar file to <IS_HOME>/repository/Components/dropins folder
 
 3. Add the following property in application-authentication.xml under the tag AuthenticatorConfigs. Here, the name is the custom sample authenticator's name, UserStoresPrecedence is the user stores order. The values for UserStoresPrecedence should be the secondary user store domain names.
+
 `<AuthenticatorConfig name="CustomBasicAuthenticator" enabled="true"> <Parameter name="UserStoresPrecedence">Secondary,Third</Parameter> </AuthenticatorConfig>`
 
  Add an alias under AuthenticatorNameMappings as below.
