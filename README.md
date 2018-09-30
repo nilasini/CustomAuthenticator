@@ -17,3 +17,7 @@ Follow the below steps to tryout the scenario
 5. Add user stores with domain name as Secondary. Third
 6. Add users to the user stores
 7. Login through the user without specifying the domain, then the user will be authenticated according to the user store precedence configured through application-authentication.xml
+
+For implementation details please refer \[1]
+
+\[1] https://medium.com/@nilasini/include-user-store-precedence-during-the-login-in-wso2-is-f295a95cca3d
