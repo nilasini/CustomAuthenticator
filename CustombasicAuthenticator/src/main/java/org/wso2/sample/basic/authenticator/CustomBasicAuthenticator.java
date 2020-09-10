@@ -104,6 +104,7 @@ public class CustomBasicAuthenticator extends AbstractApplicationAuthenticator
                 if (domainOrder != null) {
                     for (String domain : domainOrder) {
                         String usernameWithDomain = UserCoreUtil.addDomainToName(username, domain);
+                        log.info(" Trying to authenticate user: " + username + " with user store domain :" + domain );
                         isAuthenticated = userStoreManager.authenticate(
                                 MultitenantUtils.getTenantAwareUsername(usernameWithDomain), password);
                         if (isAuthenticated) {
